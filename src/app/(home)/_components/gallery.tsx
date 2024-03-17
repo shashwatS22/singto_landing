@@ -1,10 +1,32 @@
 "use client";
 import { ParallaxScroll } from "../../../components/parallax-scroll";
+import { motion,Variants } from "framer-motion";
 
 export function Gallery() {
-
-    return(
-        <div className="h-full px-16 py-20">
+const cardVariants: Variants = {
+  offscreen: {
+           y: 400,
+      opacity:0,
+      
+  },
+  onscreen: {
+      y: 0,
+     
+      opacity:1,
+    
+    transition: {
+      type: "easeIn",
+      bounce: 1,
+      duration: 2
+    }
+  }
+};
+    return (
+        <motion.div initial="offscreen"
+            whileInView="onscreen"
+        variants={cardVariants}
+        >
+        <div className="h-full px-16 ">
             <div className="mb-32">
 
             <h1 className="text-white font-extrabold text-start text-4xl">
@@ -14,7 +36,9 @@ export function Gallery() {
             </div>
 
         <ParallaxScroll images={images} />
-    </div>);
+            </div>
+            </motion.div>
+            );
 }
 
 const images = [

@@ -2,11 +2,33 @@
 
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../../../components/infinite-moving-cards";
+import { motion,Variants } from "framer-motion";
 
 export function Testimonials() {
+    const cardVariants: Variants = {
+  offscreen: {
+           y: 400,
+      opacity:0,
+      
+  },
+  onscreen: {
+      y: 0,
+     
+      opacity:1,
+    
+    transition: {
+      type: "easeIn",
+      bounce: 1,
+      duration: 2
+    }
+  }
+};
     return (
+        <motion.div initial="offscreen"
+            whileInView="onscreen"
+        variants={cardVariants}>
         <div className="h-full">
-          <div className="px-16 py-10">
+          <div className="px-16 py-20">
               
               <h1 className="text-white font-extrabold text-start text-4xl">
                   Testimonials
@@ -28,7 +50,8 @@ export function Testimonials() {
         speed="slow"
         />
         </div>
-    </div>
+            </div>
+            </motion.div>
   );
 }
 
