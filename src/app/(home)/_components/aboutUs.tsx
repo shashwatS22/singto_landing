@@ -19,22 +19,22 @@ export const AboutUs = () => {
     transition: {
       type: "easeIn",
       bounce: 1,
-      duration: 2
+      duration: 1.5
     }
   }
 };
     return (
         <div>
             
-            <div className="h-full px-16 pt-10">
+            <div className="h-full px-16 pt-20">
             <motion.div 
                 initial="offscreen"
       whileInView="onscreen"
     variants={cardVariants}>
-                <section className="bg-gray-1000 py-12">
-        <div className="container px-4">
+                <section className="py-12">
+        <div className="container ">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-           <div className="space-y-4">
+           <div className="space-y-8">
             <h1 className="text-4xl font-extrabold tracking-tight">Welcome to Singto Muay Thai</h1>
             <p className="text-white text-opacity-60 ">
               We are committed to providing a high-energy, supportive environment for all our members. At Iron Strong
@@ -46,7 +46,7 @@ export const AboutUs = () => {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              alt="Iron Strong Gym"
+              alt="Singto Muay Thai"
               className="rounded-xl object-cover"
               height="300"
               src="/images/aboutUs.webp"
@@ -65,8 +65,8 @@ export const AboutUs = () => {
                 initial="offscreen"
       whileInView="onscreen"
     variants={cardVariants}>
-                <h1 className="text-white font-extrabold text-start text-4xl pt-10">
-                Meet our Instructors
+                <h1 className="text-white font-extrabold text-center text-4xl pt-20">
+                Meet the Founders
                 </h1>
                 <CoachProfiles/>                
             </motion.div>

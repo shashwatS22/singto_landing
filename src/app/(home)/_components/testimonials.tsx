@@ -19,7 +19,7 @@ export function Testimonials() {
     transition: {
       type: "easeIn",
       bounce: 1,
-      duration: 2
+      duration: 1.5
     }
   }
 };
@@ -30,14 +30,13 @@ export function Testimonials() {
         <div className="h-full">
           <div className="px-16 py-20">
               
-              <h1 className="text-white font-extrabold text-start text-4xl">
+              <h1 className="text-white font-extrabold text-center text-4xl">
                   Testimonials
           </h1>
-          <div className="text-white text-opacity-65 font-normal pt-4">
+          <div className="text-white text-opacity-65 text-center font-normal pt-4 max-w-4xl mx-auto">
               <p>
-                  Join a community that values growth, health, and martial arts. Hear from our members about their journeys of transformation, achievement, and the unforgettable experience of training under the Dehradun sky.
-              </p>
-          </div>
+                  Discover a community deeply rooted in growth, wellness, and the disciplined art of Muay Thai. At Singto Muay Thai, witness firsthand the powerful testimonials of our members whose lives have been shaped by the transformative power of our training. Each story is a testament to the strength and clarity gained under the open Dehradun sky.
+</p>         </div>
           </div>
         
             <div

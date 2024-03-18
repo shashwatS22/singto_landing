@@ -32,14 +32,14 @@ export const ParallaxScroll = ({
 
   return (
     <div
-      className={cn("h-[480vh] md:h-[240vh] lg:h-[170vh] items-start w-full", className)}
+      className={cn("h-[480vh] md:h-[240vh] lg:h-[175vh] items-start w-full", className)}
       ref={gridRef}
     >
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center  max-w-screen mx-auto gap-10"
         ref={gridRef}
       >
-        <div className="grid  gap-10">
+        <div className="grid gap-10">
           {firstPart.map((el, idx) => (
             <motion.div
               style={{ y: translateFirst }}

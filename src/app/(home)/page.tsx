@@ -4,6 +4,8 @@ import { Inter_Tight } from "next/font/google";
 import { Testimonials } from "./_components/testimonials";
 import { AboutUs } from "./_components/aboutUs";
 import { Gallery } from "./_components/gallery";
+import { Footer } from "./_components/footer";
+import { Faq } from "./_components/faq";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
 const Home = () => {
@@ -13,7 +15,9 @@ const Home = () => {
             <Hero />
                 <AboutUs />
                 <Gallery/>
-                <Testimonials/>
+                <Testimonials />
+                <Faq/>
+                <Footer/>
         </div>
     </main>
     );
