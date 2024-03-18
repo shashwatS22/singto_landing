@@ -51,21 +51,15 @@ const imageVariants: Variants = {
   }
 };
 
-  
   return (
     <div   className="h-[100vh] w-[80vw] items-center justify-center top-10 bottom-10 mx-auto">
       <div 
- 
         className=" grid gap-10 grid-cols-2 relative  rounded-xl px-20 py-10 "
       >
           <div className="">
-          
-
                 <motion.div className="relative h-full rounded-xl overflow-hidden" initial="offscreen" whileInView="onscreen" variants={imageVariants}>
-
                   <div
                   className="w-full h-[80vh]"
-
                   >
                   <Image
                     fill
@@ -77,9 +71,7 @@ const imageVariants: Variants = {
                   </div>
                 </motion.div>
           </div>
-       
         <motion.div initial="offscreen" whileInView="onscreen" variants={textVariants}>
-          
           <h2 className="text-center m-0 py-4 text-3xl font-bold">{title}</h2>
             <p className="text-normal text-white text-opacity-60 ">{description}</p>
         </motion.div>

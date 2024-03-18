@@ -23,9 +23,9 @@ export const CoachProfiles=()=> {
   return (
     <main className='gap-10 justify-center items-center pt-20'>
       {
-        profiles.map( (profile) => {
+        profiles.map( (profile,i) => {
 
-          return <Profile  {...profile} />
+          return <Profile key={i} {...profile} />
         })
       }
     </main>
