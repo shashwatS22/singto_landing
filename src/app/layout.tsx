@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={cn("justify center items-center max-w-screen-2xl 2xl:mx-auto",inter.className)}>{children}</body>
+      <body className={cn("justify center items-center max-w-screen-2xl 2xl:mx-auto bg-black",inter.className)}>{children}</body>
     </html>
   );
 }
